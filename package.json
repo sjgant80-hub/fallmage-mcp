@@ -1,0 +1,23 @@
+{
+  "name": "@ai-native-solutions/fallmage-mcp",
+  "version": "1.0.0",
+  "description": "MCP stdio server exposing fallmage image-editor primitives (canvas presets, filter library, Ω autopilot router, document planner) to any MCP client.",
+  "type": "module",
+  "main": "./src/index.js",
+  "bin": { "fallmage-mcp": "./src/index.js" },
+  "files": ["src", "README.md", "LICENSE"],
+  "scripts": {
+    "start": "node ./src/index.js",
+    "test": "node -e \"import('@ai-native-solutions/fallmage-sdk').then(m=>console.log('sdk ok · presets',Object.keys(m.PRESETS).length))\""
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.4",
+    "@ai-native-solutions/fallmage-sdk": "^1.0.0"
+  },
+  "keywords": ["mcp", "model-context-protocol", "image-editor", "fallmage", "canvas"],
+  "license": "MIT",
+  "author": "AI-Native Solutions",
+  "homepage": "https://github.com/sjgant80-hub/fallmage-mcp",
+  "repository": { "type": "git", "url": "https://github.com/sjgant80-hub/fallmage-mcp.git" },
+  "publishConfig": { "access": "public" }
+}
